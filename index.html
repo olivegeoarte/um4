@@ -11,7 +11,7 @@
         </style>
     </head>
     <body>
-        <div><img src="bussola2.png"/></div>
+        <div><img src="bussola1.png"/></div>
         
         <script>
             var div = document.getElementsByTagName("div")[0];
@@ -23,12 +23,8 @@
                     img.style.transform = "rotateZ(" + evt.alpha + "deg)";
                 }, false);
             } else {
-                alert("Teu browser é desorientado, vei. Taca fogo nele!");
+                alert("O browser não tem suporte a device orientation!");
             }
-            
-            window.addEventListener('touchstart', function(evt) {
-                img.src = "bussola" + evt.touches.length + ".png";
-            }, false);
         </script>
     </body>
 </html>
